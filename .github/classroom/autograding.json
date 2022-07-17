@@ -1,19 +1,9 @@
 {
   "tests": [
     {
-      "name": "command",
-      "setup": "",
-      "run": "sudo -H pip3 install -qI pytest;pytest",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": null
-    },
-    {
       "name": "python tests",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest",
+      "run": "python3 -m pytest",
       "input": "",
       "output": "",
       "comparison": "included",
