@@ -3,6 +3,7 @@ def price(dayOfWeek, isOldOrYoung=False, isNight=False):
 
     Parameters
     ----------
+
     dayOfWeek : str
         3 letters that encode the Day of the week.
     isOldOrYoung : boolean
