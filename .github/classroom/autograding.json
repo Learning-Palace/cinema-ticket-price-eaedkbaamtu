@@ -32,7 +32,7 @@
     },
     {
       "name": "test notebook",
-      "setup": "sudo -H pip3 install -qI pytest testbook ipykernel",
+      "setup": "sudo apt install python3-testresources;sudo -H pip3 install -qI pytest testbook ipykernel",
       "run": "python3 -m pytest tests/test_jupyter_nb.py",
       "input": "",
       "output": "",
