@@ -1,9 +1,9 @@
 {
   "tests": [
     {
-      "name": "command",
-      "setup": "",
-      "run": "sudo -H pip3 install -qI pytest;pytest",
+      "name": "python tests",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python3 -m pytest",
       "input": "",
       "output": "",
       "comparison": "included",
@@ -11,14 +11,34 @@
       "points": null
     },
     {
-      "name": "python tests",
+      "name": "test_pricing_weekDayAdultMorning",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest",
+      "run": "python3 -m pytest tests/test_pricing_weekDayAdultMorning.py",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 10
+      "points": 1
+    },
+    {
+      "name": "test_pricing_weekendAdultNight",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python3 -m pytest tests/test_pricing_weekendAdultNight.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test notebook",
+      "setup": "sudo -H pip3 install -qI pytest ipynb",
+      "run": "python3 -m pytest tests/test_jupyter_nb.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
     }
   ]
 }
